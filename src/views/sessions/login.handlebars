@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <!-- Enlaza los estilos CSS de Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container mt-4">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h1 class="card-title text-center">Iniciar Sesion</h1>
+
+            {{#if error}}
+              <div class="alert alert-danger">
+                {{error}}
+              </div>
+            {{/if}}
+
+            <form action="/api/session/login" method="post">
+              <div class="mb-3">
+                <label for="email" class="form-label">Email:</label>
+                <input type="text" class="form-control" id="email" name="email" required>
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">Contraseña:</label>
+                <input type="password" class="form-control" id="password" name="password" required>
+              </div>
+              <button type="submit" class="btn btn-primary">Acceder</button>
+            </form>
+
+            <div class="mt-4 text-center">
+              <a href="/api/session/register" class="btn btn-success">Registrarse</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-4 text-center">
+          <a href="/api/session/forgot-password">Recuperar contraseña</a>
+        </div>
+
+        {{!-- <div class="mt-4 text-center">
+          <a href="/api/session/github" class="btn btn-secondary">Login with GitHub</a>
+        </div> --}}
+      </div>
+    </div>
+  </div>
+
+  <!-- Incluye los scripts de Bootstrap y jQuery (si es necesario) -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

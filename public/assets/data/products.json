@@ -1,0 +1,78 @@
+[{
+  "id": 1,
+  "title": "Vino mil vientos Malbec",
+  "description": "Vino malbec producido en el Valle de pedernal- San Juan Argentina.",
+  "price": 8500,
+  "category": "Vinos",
+  "status": "Available",
+  "thumbnails": [
+    "https://http2.mlstatic.com/D_NQ_NP_773936-MLA71406836866_092023-O.webp"
+  ],
+  "code": "LENTP001",
+  "stock": 5
+},
+{
+  "id": 2,
+  "title": "Dulce de membrillo",
+  "description": "Dulce de membrillo de 650g.",
+  "price": 3000,
+  "category": "Dulces",
+  "status": "Available",
+  "thumbnails": [
+    "https://http2.mlstatic.com/D_NQ_NP_976125-MLU72375847128_102023-O.webp"
+  ],
+  "code": "HPMP007",
+  "stock": 25
+},
+{
+  "id": 3,
+  "title": "Aceite de oliva 500ml",
+  "description": "Aceite de oliva fraccionado por Saiz.",
+  "price": 5400,
+  "category": "Aceites",
+  "status": "Available",
+  "thumbnails": [
+    "teclado_corsair.jpg"
+  ],
+  "code": "TPLNKW018",
+  "stock": 30
+},
+{
+  "id": 4,
+  "title": "Aceite de oliva de 1l",
+  "description": "Aceite de oliva fraccionado por Saiz",
+  "price": 9800,
+  "category": "Aceite",
+  "status": "Available",
+  "thumbnails": [
+    "memoria_adata.jpg"
+  ],
+  "code": "XBWCG020",
+  "stock": 50
+},
+{
+  "id": 5,
+  "title": "Vino malbec Casimiro",
+  "description": "Malbec Casimiro",
+  "price": 4000,
+  "category": "Vinos",
+  "status": "Available",
+  "thumbnails": [
+    "memory_kingston.jpg"
+  ],
+  "code": "ASUSNW009",
+  "stock": 50
+},
+{
+  "id": 6,
+  "title": "Dulce de membrillo",
+  "description": "Dulce de membrillode 1kg",
+  "price": 3200,
+  "category": "Dulces",
+  "status": "Available",
+  "thumbnails": [
+    "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.kF7Wb2iGSQDioUnHbHb9pQHaHa%26pid%3DApi%26h%3D160&f=1&ipt=0a894cd6930e9c3c50a2904518ab13cd1b1b58a8ba9faa0727dd695b00c9ce86&ipo=images"
+  ],
+  "code": "ASUSNW009",
+  "stock": 50
+}]

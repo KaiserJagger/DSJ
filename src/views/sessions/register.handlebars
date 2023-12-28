@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign up</title>
+  <!-- Enlaza los estilos CSS de Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container mt-4">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h1 class="card-title text-center">Registrarse</h1>
+
+            <form action="/api/session/register" method="post">
+               <div class="form-group">
+                    <label for="first_name">Nombre</label>
+                    <input name="first_name" type="text" class="form-control" required pattern="^[A-Z][a-z]+( [A-Z][a-z]+)*$" title="Formato: Mmmmm Mmmmm">
+                    <div class="invalid"></div>
+                </div>
+                <div class="form-group">
+                    <label for="last_name">Apellido</label>
+                    <input name="last_name" type="text" class="form-control" required pattern="^[A-Z][a-z]+( [A-Z][a-z]+)*$" title="Formato: Mmmmm Mmmmm">
+                    <div class="invalid"></div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input name="email" type="email" class="form-control" required>
+                    <div class="invalid" title="Correo electrónico es obligatório"></div>
+                </div>
+                <div class="form-group">
+                    <label for="age">Edad</label>
+                    <input name="age" type="number" class="form-control" required title="Debe ser un numero entero mayor que 0">
+                    <div class="invalid" title="Debe ser un numero entero mayor que 0"></div>
+                </div>
+                <div class="form-group">
+                    <label for="password">Contraseña</label>
+                    <input name="password" type="password" class="form-control" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,120}$" title="Debe tener al entre 8 y 120 caracteres, al menos una mayúscula, una minúscula y un caracter especial.">
+                    <div class="invalid" title="Debe tener al entre 8 y 120 caracteres, al menos una mayúscula, una minúscula y un caracter especial."></div>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr />
+
+  <div class="container mt-4 text-center">
+  Ya tienes una cuenta?
+    <a href="/api/session/login" class="btn btn-secondary">Iniciar sesion</a>
+  </div>
+
+  <!-- Incluye los scripts de Bootstrap y jQuery (si es necesario) -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
+  <script src="../../utils/utils.js"></script>
+  <script>
+  document.querySelector("form").onsubmit = validateForm;
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,49 @@
+<!-- productDetail.handlebars -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{product.title}} - Product Detail</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="col-md-6">
+      <a href="/api/products" class="btn btn-primary">Products</a>
+    </div>
+  <div class="container mt-4">
+    <h1>{{product.title}}</h1>
+    <div class="row">
+      <div class="col-md-6">
+        <img src="{{product.thumbnails}}" class="img-fluid" alt="Producto">
+      </div>
+      <div class="col-md-6">
+        <p class="lead">{{product.description}}</p>
+        <p><strong>Category:</strong> {{product.category}}</p>
+        <p><strong>Stock:</strong> {{product.stock}}</p>
+        <p><strong>Price:</strong> ${{product.price}}</p>
+        <p><strong>Owner:</strong> {{product.owner}}</p>
+
+        <!-- Agrega cualquier otra información específica del producto aquí -->
+
+    <div class="col-md-6">
+      <a href="/api/products/" class="btn btn-primary">Products</a>
+    </div>
+
+        <!-- Botón para agregar al carrito -->
+        <form action="/api/carts/add-to-cart" method="POST">
+          <input type="hidden" name="productId" value="{{product._id}}" />
+          <button class="btn btn-success" type="submit">Agregar al carrito</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Incluye los scripts de Bootstrap y jQuery (si es necesario) -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
