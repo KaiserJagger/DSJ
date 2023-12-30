@@ -2,7 +2,7 @@ import express from "express";
 import session from "express-session";
 import MongoStore from "connect-mongo";
 import exphbs from "express-handlebars";
-import bodyParser from "body-parser";
+// import bodyParser from "body-parser";
 import path from "path";
 import passport from "passport";
 import { fileURLToPath } from "url";
@@ -51,7 +51,7 @@ const hbs = exphbs.create();
 app.engine("handlebars", hbs.engine);
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "handlebars");
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.urlencoded({ extended: true }));
 
 app.use(
   session({

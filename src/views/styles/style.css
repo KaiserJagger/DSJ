@@ -1,21 +1,20 @@
-/* global.css */
+
 
 body {
-  background-image:url("/src/views/img/bg-madera2.jpg") ;
+  background-color: #c82333;
   color: #495057;
 }
-
 
 .navbar {
   background-color: #007bff !important;
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: #ffffff;
+  color: red
 }
 
 .container {
-  background-color: #ffffff;
+  background-color: red;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -42,6 +41,3 @@ body {
   border-color: #c82333;
 }
 
-.card-img-top{
-  width: 100%;
-}

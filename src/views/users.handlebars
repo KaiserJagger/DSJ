@@ -9,17 +9,18 @@
 </head>
 <body>
   <div class="container mt-4">
-    <a href="/api/products" class="btn btn-primary">Home</a>
-    <h1>My Account</h1>
+    <a href="/api/products" class="btn btn-primary">Productos</a>
+    <h1 class="mt-3">Mi cuenta</h1>
     
     <div class="mt-4">
-      <h2>Email: {{email}}</h2>
-      <h3>Name: {{name}}</h3>
-      <h3>Surname: {{surname}}</h3>
+      <h5>Correo electrónico: {{email}}</h2>
+      <h5>Nombre: {{name}}</h3>
+      <h5>Apellido: {{surname}}</h3>
       
-      <form action="/api/user/roles" method="POST">
+      <!-- Cambiar Rol -->
+      {{!-- <form action="/api/user/roles" method="POST" class="mb-4">
+        <h3 class="mb-3">Role: {{role}}</h3>
         <div class="mb-3">
-          <h3>Role: {{role}}</h3>
           <label for="newRole" class="form-label">Change Role:</label>
           <select name="newRole" id="newRole" class="form-select">
             <option value="{{role}}">Select..</option>
@@ -27,8 +28,27 @@
             <option value="premium">Premium</option>
           </select>
           <input type="hidden" name="userId" value="{{_id}}">
-          <button type="submit" class="btn btn-success">Change Role</button>
+          <button type="submit" class="btn btn-success mt-2">Change Role</button>
         </div>
+      </form> --}}
+      
+      <!-- Cambiar Contraseña -->
+      <h3 class="mb-3">Actualizar/ Cambiar contraseña</h3>
+      <form action="/api/user/changePassword" method="POST">
+        <div class="mb-3">
+          <label for="currentPassword" class="form-label">Contraseña actual:</label>
+          <input type="password" name="currentPassword" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label for="newPassword" class="form-label">Nueva Contraseña:</label>
+          <input type="password" name="newPassword" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label for="confirmNewPassword" class="form-label">Confirmar nueva contraseña:</label>
+          <input type="password" name="confirmNewPassword" class="form-control" required>
+        </div>
+        <input type="hidden" name="userId" value="{{_id}}">
+        <button type="submit" class="btn btn-primary">Confirmar</button>
       </form>
     </div>
   </div>

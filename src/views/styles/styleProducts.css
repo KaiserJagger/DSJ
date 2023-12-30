@@ -1,0 +1,75 @@
+/* styleProducts.css */
+
+.container{
+    background-color: #218838;
+}
+
+/* Estilo para la barra de navegación */
+.navbar {
+    border-radius: 0;
+  }
+  
+  /* Estilo para el formulario de búsqueda en la barra de navegación */
+  .navbar form {
+    margin-right: auto;
+  }
+  
+  /* Estilo para la tarjeta de bienvenida */
+  .welcome-form {
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  /* Estilo para la imagen del logo */
+  .img-logo {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Estilo para la lista de productos */
+  .product-list {
+    padding: 20px;
+  }
+  
+  /* Estilo para las tarjetas de producto */
+  .product-card {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Estilo para la paginación */
+  .pagination-container {
+    margin-top: 20px;
+  }
+  
+  /* Estilo para la imagen dentro de la tarjeta de producto */
+  .product-img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Estilo para el botón "Agregar al carrito" */
+  .btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+  }
+  
+  .btn-success:hover {
+    background-color: #218838;
+    border-color: #218838;
+  }
+  
+  /* Estilo para el botón "Quitar del carrito" */
+  .btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+  }
+  
+  .btn-danger:hover {
+    background-color: #c82333;
+    border-color: #c82333;
+  }
+  

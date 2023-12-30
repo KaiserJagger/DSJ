@@ -15,6 +15,7 @@
                                             <p class="card-text">${product.description}</p>
                                             <h3 class="card-text">Precio: $${product.price}</h3>
                                             <a href="/api/session/login/" class="btn btn-primary btn-block mb-2">Comprar</a>
+                                            <a href="/api/products/{{this._id}}" class="btn btn-success" btn-block mb-4 >Detalles</a>
                                         </div>
                                     </div>
                                     <div class="col-md-4">

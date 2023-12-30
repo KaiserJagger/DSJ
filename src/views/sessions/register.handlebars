@@ -28,7 +28,7 @@
                     <div class="invalid"></div>
                 </div>
                 <div class="form-group">
-                    <label for="email">Email</label>
+                    <label for="email">Correo electrónico</label>
                     <input name="email" type="email" class="form-control" required>
                     <div class="invalid" title="Correo electrónico es obligatório"></div>
                 </div>
@@ -42,6 +42,13 @@
                     <input name="password" type="password" class="form-control" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,120}$" title="Debe tener al entre 8 y 120 caracteres, al menos una mayúscula, una minúscula y un caracter especial.">
                     <div class="invalid" title="Debe tener al entre 8 y 120 caracteres, al menos una mayúscula, una minúscula y un caracter especial."></div>
                 </div>
+
+                <div class="form-group">
+                    <label for="confirm_password">Confirmar Contraseña</label>
+                    <input name="confirm_password" type="password" class="form-control" required>
+                    <div class="invalid" title="Las contraseñas no coinciden."></div>
+                </div>
+
                 <button type="submit" class="btn btn-primary">Enviar</button>
             </form>
           </div>
