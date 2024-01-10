@@ -10,17 +10,15 @@
     <div class="col-12">
       <h2>Email: {{this.email}}</h2>
       <form action="/api/users/update-user-role/{{_id}}" method="POST">
-        <h3>Role:
+        <h3>Role: </h3>
           <span class="badge bg-secondary">{{role}}</span>
           <select name="newRole" class="form-select">
             <option value="{{role}}" selected>Select..</option>
             <option value="user">User</option>
             <option value="premium">Premium</option>
-            <option value="admin">Admin</option>
           </select>
           <input type="hidden" name="userId" value="{{_id}}" />
           <button type="submit" class="btn btn-primary">Change Role</button>
-        </h3>
       </form>
     </div>
   </div>

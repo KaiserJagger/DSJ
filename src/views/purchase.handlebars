@@ -4,26 +4,26 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Purchase Receipt</title>
+  <title>Recibo de compra</title>
   <!-- Enlaza los estilos CSS de Bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
 </head>
 <body>
   <div class="container mt-4">
-    <h1>Purchase Receipt</h1>
+    <h1>Recibo de compra</h1>
 
     <div class="card">
       <div class="card-body">
-        <h2 class="card-title">Code: {{ticket.code}}</h2>
-        <h3 class="card-subtitle mb-2 text-muted">Purchaser: {{ticket.purchaser}}</h3>
-        <h2 class="card-text">Total amount: $ {{ticket.amount}}</h2>
-        <p class="card-text">Date: {{ticket.purchase_datetime}}</p>
+        <h2 class="card-title">Codigo: {{ticket.code}}</h2>
+        <h3 class="card-subtitle mb-2 text-muted">Compra: {{ticket.purchaser}}</h3>
+        <h2 class="card-text">Total: $ {{ticket.amount}}</h2>
+        <p class="card-text">Fecha: {{ticket.purchase_datetime}}</p>
       </div>
     </div>
 
     <div class="mt-4">
-      <h3>Thank you for your purchase!</h3>
-      <a href="/api/products" class="btn btn-primary">Home</a>
+      <h3>Gracias por su compra!</h3>
+      <a href="/api/products" class="btn btn-primary">Inicio</a>
     </div>
   </div>
 

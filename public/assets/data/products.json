@@ -2,7 +2,8 @@
   "id": 1,
   "title": "Vino mil vientos Malbec",
   "description": "Vino malbec producido en el Valle de pedernal- San Juan Argentina.",
-  "price": 8500,
+  "price": 9500,
+  "pricepb":8500, 
   "category": "Vinos",
   "status": "Available",
   "thumbnails": [
@@ -16,6 +17,7 @@
   "title": "Dulce de membrillo",
   "description": "Dulce de membrillo de 650g.",
   "price": 3000,
+  "pricepb":2800,
   "category": "Dulces",
   "status": "Available",
   "thumbnails": [
@@ -28,7 +30,8 @@
   "id": 3,
   "title": "Aceite de oliva 500ml",
   "description": "Aceite de oliva fraccionado por Saiz.",
-  "price": 5400,
+  "price": 8500,
+  "pricepb":8200,
   "category": "Aceites",
   "status": "Available",
   "thumbnails": [
@@ -41,7 +44,8 @@
   "id": 4,
   "title": "Aceite de oliva de 1l",
   "description": "Aceite de oliva fraccionado por Saiz",
-  "price": 9800,
+  "price": 12500,
+  "pricepb":12200,
   "category": "Aceite",
   "status": "Available",
   "thumbnails": [
@@ -55,6 +59,7 @@
   "title": "Vino malbec Casimiro",
   "description": "Malbec Casimiro",
   "price": 4000,
+  "pricepb":3500,
   "category": "Vinos",
   "status": "Available",
   "thumbnails": [
@@ -67,7 +72,36 @@
   "id": 6,
   "title": "Dulce de membrillo",
   "description": "Dulce de membrillode 1kg",
-  "price": 3200,
+  "price": 3500,
+  "pricepb":3200,
+  "category": "Dulces",
+  "status": "Available",
+  "thumbnails": [
+    "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.kF7Wb2iGSQDioUnHbHb9pQHaHa%26pid%3DApi%26h%3D160&f=1&ipt=0a894cd6930e9c3c50a2904518ab13cd1b1b58a8ba9faa0727dd695b00c9ce86&ipo=images"
+  ],
+  "code": "ASUSNW009",
+  "stock": 50
+},
+{
+  "id": 7,
+  "title": "Miel de abeja",
+  "description": "Miel de abeja de 1kg",
+  "price": 3000,
+  "pricepb":2700,
+  "category": "Dulces",
+  "status": "Available",
+  "thumbnails": [
+    "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.kF7Wb2iGSQDioUnHbHb9pQHaHa%26pid%3DApi%26h%3D160&f=1&ipt=0a894cd6930e9c3c50a2904518ab13cd1b1b58a8ba9faa0727dd695b00c9ce86&ipo=images"
+  ],
+  "code": "ASUSNW009",
+  "stock": 50
+},
+{
+  "id": 8,
+  "title": "Miel de abeja",
+  "description": "Miel de abeja de 500g",
+  "price": 1600,
+  "pricepb":1400,
   "category": "Dulces",
   "status": "Available",
   "thumbnails": [
