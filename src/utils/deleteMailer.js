@@ -14,26 +14,26 @@ export const deleteAccountMailer = async (email) => {
   const Mailgenerator = new mailgen({
     theme: "default",
     product: {
-      name: "JaggerStore",
-      link: "https://jaggerstore-production-c4a6.up.railway.app/api/products",
+      name: "Distribuciones-San Juan",
+      link: "https://distribucionessanjuan-dev-bajj.4.us-1.fl0.io",
     },
   });
 
   const response = {
     body: {
       name: email,
-      intro: "Your account has been deleted",
+      intro: "Tu cuenta fue eliminada",
       action: {
         instructions:
-          "Your account was deleted due to inactivity. To create a new account, click on the button",
+          "Su cuenta fue eliminada debido a inactividad. Para crear una nueva cuenta, haga clic en el botón",
         button: {
           color: "#22BC66",
-          text: "Create new account",
-          link: "https://jaggerstore-production-c4a6.up.railway.app/api/session/register",
+          text: "Crear nueva cuenta",
+          link: "https://distribucionessanjuan-dev-bajj.4.us-1.fl0.io/api/session/register",
         },
       },
       outro:
-        "Need help, or have questions? Just reply to this email, we'd love to help.",
+        "¿Necesita ayuda o tiene preguntas? Simplemente responda a este correo electrónico, nos encantaría ayudarlo.",
     },
   };
 
@@ -42,7 +42,7 @@ export const deleteAccountMailer = async (email) => {
   let message = {
     from: GMAIL_CONFIG.user,
     to: email,
-    subject: "JaggerStore- Your account has been deleted",
+    subject: "Distribuciones-San Juan- Tu cuenta ha sido eliminada por inactividad",
     html: mail,
   };
 
@@ -67,21 +67,21 @@ export const deleteProductMailer = async (productOwner, productTitle) => {
   const Mailgenerator = new mailgen({
     theme: "default",
     product: {
-      name: "e-commerce API",
-      link: "https://jaggerstore-production-c4a6.up.railway.app/api/session/login",
+      name: "Distribuciones San Juan",
+      link: "https://distribucionessanjuan-dev-bajj.4.us-1.fl0.io/api/session/login",
     },
   });
 
   const response = {
     body: {
       name: productOwner,
-      intro: "Your product has been deleted",
+      intro: "Tu producto ha sido eliminado",
       action: {
-        instructions: `Your product "${productTitle}" has been removed from the store`,
+        instructions: `Tu producto "${productTitle}" ha sido eliminado de la tienda`,
         button: {
           color: "#176B87",
-          text: "Go to store",
-          link: "https://jaggerstore-production-c4a6.up.railway.app/api/products",
+          text: "Ir a la tienda",
+          link: "https://distribucionessanjuan-dev-bajj.4.us-1.fl0.io/api/products",
         },
       },
       outro:
@@ -94,7 +94,7 @@ export const deleteProductMailer = async (productOwner, productTitle) => {
   let message = {
     from: GMAIL_CONFIG.user,
     to: productOwner,
-    subject: "JaggerStore - Your product has been deleted",
+    subject: "Distribuciones San Juan - Tu producto ha sido eliminado",
     html: mail,
   };
 

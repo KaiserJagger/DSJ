@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Cart</title>
+  <title>Carrito</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+  // SDK MercadoPago.js
+<script src="https://sdk.mercadopago.com/js/v2"></script>
 </head>
 <body>
   <div class="container">
@@ -17,7 +19,7 @@
       </div>
     </div>
 
-    <h1 class="mt-3">Cart</h1>
+    <h1 class="mt-3">Comprar carrito</h1>
 
     {{#if message}}
     <div class="alert alert-danger">
@@ -47,7 +49,7 @@
                 <input type="hidden" name="productId" value="{{this.productId._id}}">
                 <div class="input-group">
                   <input type="number" name="quantity" value="{{this.quantity}}" class="form-control">
-                  <button type="submit" class="btn btn-primary">Update quantity</button>
+                  <button type="submit" class="btn btn-primary">Actualizar cantidad</button>
                 </div>
               </form>
 
@@ -55,7 +57,7 @@
               <form action="/api/carts/remove-from-cart" method="POST">
                 <input type="hidden" name="cartId" value="{{../_id}}">
                 <input type="hidden" name="productId" value="{{this.productId._id}}">
-                <button type="submit" class="btn btn-danger">Remove product</button>
+                <button type="submit" class="btn btn-danger">Eliminar producto</button>
               </form>
             </div>
           </div>
@@ -68,17 +70,19 @@
       <!-- Formulario para eliminar el carrito -->
       <form action="/api/carts/remove-cart" method="POST">
         <input type="hidden" name="cartId" value="{{_id}}">
-        <button type="submit" class="btn btn-danger">Remove cart</button>
+        <button type="submit" class="btn btn-danger">Vaciar carrito</button>
       </form>
     </div>
     {{/each}}
+
 
     <!-- Mostrar el total para el carrito completo -->
     <p class="mt-3">Total: $ {{cartTotal}}</p>
 
     <!-- Formulario para realizar la compra -->
     <form action="/api/carts/purchase" method="GET" class="mt-3">
-      <button type="submit" class="btn btn-success">Purchase</button>
+      <button type="submit" id="checkout-btn" class="btn btn-success">Comprar</button>
+       <div id="wallet_container"></div>
     </form>
   </div>
 

@@ -2,7 +2,6 @@ import express from "express";
 import session from "express-session";
 import MongoStore from "connect-mongo";
 import exphbs from "express-handlebars";
-// import bodyParser from "body-parser";
 import path from "path";
 import passport from "passport";
 import { fileURLToPath } from "url";
